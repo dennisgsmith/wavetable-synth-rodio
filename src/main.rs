@@ -12,8 +12,8 @@ struct WavetableOscillator {
 impl WavetableOscillator {
     fn new(sample_rate: u32, wavetable: Vec<f32>) -> WavetableOscillator {
         return WavetableOscillator {
-            sample_rate: sample_rate,
-            wavetable: wavetable,
+            sample_rate,
+            wavetable,
             index: 0.0,
             index_increment: 0.0,
         };
